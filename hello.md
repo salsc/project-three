@@ -1,3 +1,0 @@
-Another Test
-
-good-bye
