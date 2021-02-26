@@ -5,6 +5,8 @@ We are the BORG....resistance is futile!
 aloha
 
 Branch!!!!!
-Branch!!!!! 
+Brunch!!!!! 
+Look at me dude, I don't need practice with brunch!
 
 are we talking about practice?
+I miss Alan Iverson!!
