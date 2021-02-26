@@ -1,6 +1,9 @@
 import axios from "axios";
-import { Component } from 'react';
+import React, { Component } from 'react';
+import {Route,Link,Switch} from "react-router-dom";
 import './App.css';
+import Home from "../Home/Home";
+import Show from "../Show/Show";
 
 const api_key = 'a5b9e8fa25dd4524925eac5e38f665b9';
 
@@ -21,25 +24,32 @@ export default class App extends Component {
       .get(`${url}time_series?${stocks}&interval=1h&apikey=${api_key}`)
       .then(response => {
         console.log(response)
+        this.setState({
+          data: response.data
+        })
       })
   }
   
   render () {
+    console.log("App",this.state);
     return (
-      <div>
+      <div className="App">
+        <div className="App-header">
         <Link to='/'>
-          <h2>Stock Market Watch Portal</h2>
+          <p id="title">Stock Market Watch List Portal</p>
         </Link>
+        </div>
+        <main>
         <Switch>
-          <Route exact path='/' render={(routerProps) =>
-            <Home {...this.state} {...routerProps} />
-          }>
+          <Route exact path='/'>
+            <Home {...this.state} />
           </Route>
           <Route path='/symbol/:id' render={(routerProps) =>
             <Show {...this.state} {...routerProps} />
           }>
           </Route>
         </Switch>
+        </main>
       </div>
     )
   }
