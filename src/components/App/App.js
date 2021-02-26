@@ -26,7 +26,23 @@ export default class App extends Component {
   
   render () {
     return (
-      <div>Hi</div>
+      <div>
+        <Link to='/'>
+          <h2>Stock Market Watch Portal</h2>
+        </Link>
+        <Switch>
+          <Route exact path='/' render={(routerProps) =>
+            <Home {...this.state} {...routerProps} />
+          }>
+          </Route>
+          <Route path='/symbol/:id' render={(routerProps) =>
+            <Show {...this.state} {...routerProps} />
+          }>
+          </Route>
+        </Switch>
+      </div>
     )
   }
 }
+        
+
