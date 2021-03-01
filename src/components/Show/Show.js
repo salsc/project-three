@@ -4,13 +4,15 @@ import "./Show.css";
 
 export default class Show extends Component {
     render() {
-      console.log('Show');
+      console.log(this.props);
+      
 
       return (
         <div className="show">
           <div className="container">
             Aloha
           </div>
+          <Link to='/'>Go back to Watchlist</Link>
         </div>
       )
     }
