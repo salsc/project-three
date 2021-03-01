@@ -9,6 +9,7 @@ const api_key = 'a5b9e8fa25dd4524925eac5e38f665b9';
 
 let data = [];
 let url = 'https://api.twelvedata.com/'
+// let stocks = 'symbol=BB'
 let stocks = 'symbol=DE,CAT,AAPL,BB'
 
 export default class App extends Component {
