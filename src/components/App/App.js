@@ -9,7 +9,7 @@ const api_key = 'a5b9e8fa25dd4524925eac5e38f665b9';
 
 let data = [];
 let url = 'https://api.twelvedata.com/'
-let stocks = 'symbol=DE,CAT,AAPL,BB'
+let stocks = 'symbol=MORF,ECOR,SOS'
 
 export default class App extends Component {
   constructor(){
@@ -21,7 +21,7 @@ export default class App extends Component {
   // https://api.twelvedata.com/time_series?symbol=AAPL&interval=1min&apikey=your_api_key
   componentDidMount = () => {
     axios
-      .get(`${url}time_series?${stocks}&interval=1h&apikey=${api_key}`)
+      .get(`${url}time_series?${stocks}&interval=1day&apikey=${api_key}`)
       .then(response => {
         this.setState({
           data: response.data
