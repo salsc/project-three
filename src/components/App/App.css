@@ -20,6 +20,34 @@ a {
   text-decoration: none;
 }
 
+.delta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 290px;
+}
+
+.dDiff {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+
+.pDiff {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 110px;
+  padding-right: 10px;
+}
+
+.green{
+  color: green
+}
+
+.red{
+  color: rgb(255, 0, 0)
+
 .fixed-bottom {
   background-color: rgb(38, 41, 38);
   display: flex;

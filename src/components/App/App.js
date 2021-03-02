@@ -9,10 +9,9 @@ const api_key = '&apikey=a5b9e8fa25dd4524925eac5e38f665b9';
 
 let baseUrl = 'https://api.twelvedata.com/'
 let timeSeries = 'time_series?' 
-let stocks = 'symbol=ATNX,DE,MORF,TSLA,CD,GME,OSS'
+let stocks = 'symbol=ATNX,DE,MORF,TSLA,CD,GME,OSS,BRK.A'
 let interval = '&interval=1day' // 1min, 5min, 15min, 30min, 45min, 1h, 2h, 4h, 1day, 1week, 1month
 let data = [];
-
 
 let url = baseUrl + timeSeries + stocks + interval + api_key
 
