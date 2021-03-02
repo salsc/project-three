@@ -5,11 +5,16 @@ import './App.css';
 import Home from "../Home/Home";
 import Show from "../Show/Show";
 
-const api_key = 'a5b9e8fa25dd4524925eac5e38f665b9';
+const api_key = '&apikey=a5b9e8fa25dd4524925eac5e38f665b9';
 
+let baseUrl = 'https://api.twelvedata.com/'
+let timeSeries = 'time_series?' 
+let stocks = 'symbol=ATNX,DE,MORF,TSLA,CD,GME,OSS'
+let interval = '&interval=1day' // 1min, 5min, 15min, 30min, 45min, 1h, 2h, 4h, 1day, 1week, 1month
 let data = [];
-let url = 'https://api.twelvedata.com/'
-let stocks = 'symbol=MORF,ECOR,SOS'
+
+
+let url = baseUrl + timeSeries + stocks + interval + api_key
 
 export default class App extends Component {
   constructor(){
@@ -18,10 +23,10 @@ export default class App extends Component {
       data
     }
   }
-  // https://api.twelvedata.com/time_series?symbol=AAPL&interval=1min&apikey=your_api_key
+
   componentDidMount = () => {
     axios
-      .get(`${url}time_series?${stocks}&interval=1day&apikey=${api_key}`)
+      .get(url)
       .then(response => {
         this.setState({
           data: response.data
