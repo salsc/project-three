@@ -15,9 +15,7 @@ export default class Home extends Component {
         dataPoint = {symbol:keys[i],value:values[i]}
         data.push(dataPoint)
       }
-    //   console.log(data);
-    //   console.log(data[0].symbol);
-    //   console.log(data[0].value.values[0].close);
+ 
       const theStocks = data.map((elem,index)=>{
           return (<Link to={`/symbol/${elem.symbol}`} key={index}>
               <div className="entry">
@@ -29,7 +27,7 @@ export default class Home extends Component {
       return (
         <div className="home">
           <div className="container">
-              {theStocks}HI
+              {theStocks} <br></br> End List
           </div>
         </div>
       )

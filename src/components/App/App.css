@@ -3,21 +3,20 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 10vh;
+  background-color: rgb(38, 41, 38);
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: xx-large;
+
+
   color: white;
 }
 
 #title {
   text-decoration: none;
   color: white;
-  padding-left: 100px;
-  font-size: larger;
+  padding: 20px;
+
+  font-weight: 900;
 }
 
 a {
