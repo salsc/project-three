@@ -55,6 +55,11 @@ export default class App extends Component {
           </Route>
         </Switch>
         </main>
+        <div class="fixed-bottom">
+          <div>Three Dudes & A Front-End Stack</div> 
+          <div>Copyright (c) 2021</div>
+        </div>
+
       </div>
     )
   }
