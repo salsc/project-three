@@ -12,8 +12,7 @@ once you click on symbol, go to detail page
 
 DETAIL PAGE (fancy things :-D )
 
-current  open close high low
-
+GME open close high low
 
 
 
@@ -24,7 +23,5 @@ Autoupdating on interval
 Multiple APIs?
 - throttle apis as to stay away from our limit
 - can we ping the API to request our limit?
-
-READ MORE button - Navigates user to more info about the Symbol
 
 company logos?

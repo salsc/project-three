@@ -28,6 +28,7 @@ export default class App extends Component {
     axios
       .get(url)
       .then(response => {
+        console.log(response)
         this.setState({
           data: response.data
         })
@@ -35,6 +36,7 @@ export default class App extends Component {
   }
   
   render () {
+    console.log("App",this.state);
     return (
       <div className="App">
         <div className="App-header">
@@ -48,7 +50,7 @@ export default class App extends Component {
             <Home {...this.state} />
           </Route>
           <Route path='/symbol/:id' render={(routerProps) =>
-            <Show symbol={this.state} {...this.state} {...routerProps} />
+            <Show {...this.state} {...routerProps} />
           }>
           </Route>
         </Switch>
