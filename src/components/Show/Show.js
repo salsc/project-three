@@ -17,7 +17,7 @@ export default class Show extends Component {
     }
 
     let differenceSinceLastClose = (theSymbolData.values[0].close - theSymbolData.values[1].close).toFixed(2);
-    let percentageSinceLastClose = (differenceSinceLastClose / theSymbolData.values[1].close).toFixed(2);
+    let percentageSinceLastClose = 100*(differenceSinceLastClose / theSymbolData.values[1].close).toFixed(2);
 
     let upOrDown = ()=>{
       if (differenceSinceLastClose > 0 ) {
@@ -27,7 +27,6 @@ export default class Show extends Component {
         return <div className="red"> ⬇ Δ {differenceSinceLastClose} {percentageSinceLastClose}%</div>
       }
     }
-
 
     return (
       <div className="show">
