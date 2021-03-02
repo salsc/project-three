@@ -47,4 +47,18 @@ a {
 
 .red{
   color: rgb(255, 0, 0)
+
+.fixed-bottom {
+  background-color: rgb(38, 41, 38);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: large;
+  color: white;
+  padding: 35px;
+}
+
+main {
+ height: 750px;
+ background-color:rgba(211, 211, 211, .25);
 }
