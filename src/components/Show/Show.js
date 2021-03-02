@@ -17,9 +17,14 @@ export default class Show extends Component {
     }
 
     let differenceSinceLastClose = (theSymbolData.values[0].close - theSymbolData.values[1].close).toFixed(2);
-    let percentageSinceLastClose = (differenceSinceLastClose / theSymbolData.values[1].close).toFixed(2);
+    let percentageSinceLastClose = ((differenceSinceLastClose / theSymbolData.values[1].close) * 100).toFixed(2);
 
-    let upOrDown = ()=>{
+    let open = parseFloat(theSymbolData.values[0].open).toFixed(2);
+    let high = parseFloat(theSymbolData.values[0].high).toFixed(2);
+    let low = parseFloat(theSymbolData.values[0].low).toFixed(2);
+    let previousClose = parseFloat(theSymbolData.values[1].close).toFixed(2);
+
+    let upOrDown = () => {
       if (differenceSinceLastClose > 0 ) {
         return <div className="green"> ⬆ Δ {differenceSinceLastClose} {percentageSinceLastClose}%</div>
       }
@@ -28,17 +33,16 @@ export default class Show extends Component {
       }
     }
 
-
     return (
       <div className="show">
         <div className="container">
           <div className="symbol-details">
             All values in {theSymbolData.meta.currency}<br></br>
             {theSymbolData.meta.symbol} {theSymbolData.values[0].close} {upOrDown()}
-              OPEN: {theSymbolData.values[0].open}<br></br>
-              HIGH: {theSymbolData.values[0].high}<br></br>
-              LOW: {theSymbolData.values[0].low}<br></br>
-              PREVIOUS CLOSE: {theSymbolData.values[1].close}
+              OPEN: {open}<br></br>
+              HIGH: {high}<br></br>
+              LOW: {low}<br></br>
+              PREVIOUS CLOSE: {previousClose}
           </div>
 
         </div>
