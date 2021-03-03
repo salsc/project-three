@@ -1,12 +1,13 @@
 # MVP_REACT - Project_Unit3
 ## Project #3: Building a Front-End  Application
 
-# Stock Market Watchlist
-This app is a Stock Market Watchlist. Add or remove stocks to watch.
+# Stock Market Watchlist App
+This app is a stock market watchlist browser page that utilizes a third-party public API site for viewing real time commodoties data.
+
 Goal objectives include the following:
 
 - Pull data into the application using the [TwelveData](https://twelvedata.com/docs) API  
-
+- Navigate using embedded links to show commodity data via component pages passing props.
 
 This application is based on the technology platform of utilizing an "MVC" (Model, View, Controller) as a front-end application utilizing React tools with JavaScript and HTML frameworks. 
 
@@ -17,9 +18,11 @@ This application is based on the technology platform of utilizing an "MVC" (Mode
 ### Technical Requirements
 
 - A GitHub repo with the React app.
-- Must use React and leverage the API in the above requirements.
+- Must use React and leverage the public API for the project requirements.
+- Each Team must utilize Git Workflow (Branching and Merging).
 - Must use React Router to handle multiple views.
 - Must communicate with the API and render the UI accordingly with the information received (using `axios`).
+- React App must be depoyed (Heroku).
 
 ## Technologies Utilized:
 
@@ -38,18 +41,15 @@ This application is based on the technology platform of utilizing an "MVC" (Mode
 
 ## User Stories
 
-1. A user should be able to select an individual stock and show current status details.
-2. A user should be able view a homepage diplaying a list of stock snapshots.
-3. A user should be able to 
-4. 
+1. A user should be able view a homepage diplaying a list of stock snapshots.
+2. A user should be able to select an individual stock from a list and show current status details.
+3. A user should be able to veiw the status of an individual stock compared to previous days close value.
 
 ## Next Steps
-5. Chart
-6. View stock by category
-7. 
-8. 
-9. 
-10. 
-
+4. Individual performance chart for symbol detail page (30-days).
+5. View stocks by categories (i.e. Industrial Tech, Biotechnology, Crypto, etc.).
+6. Individual stocks can added or removed for tracking purposes.
+7. Add components for daily worst and best performers per given exchange.
+8. Create component for viewing buy/sell indicator tool.
 
 #### Copyright &copy; 2021 Three Dudes & A Front-End Stack

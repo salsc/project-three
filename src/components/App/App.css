@@ -2,11 +2,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-header {
-  font-size: xx-large;
-  color: white;
-}
-
 #title {
   text-decoration: none;
   color: white;
@@ -48,21 +43,19 @@ a {
 }
 
 .fixed-bottom {
-  background-color: rgb(38, 41, 38);
+  background-color: rgb(52, 58, 64);
   position: fixed;
   bottom: 0;
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: large;
-  color: white;
-  padding: 35px;
+  color: rgb(204, 205, 207);
+  align-content: center;
+  padding: 15px;
   width: 100%;
 }
 
-/* .right-footer {
-  align-content: right;
-} */
+
 
 main {
  height: 900px;
