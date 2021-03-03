@@ -8,8 +8,8 @@ import { Navbar, Nav } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-const api_key = '&apikey=a5b9e8fa25dd4524925eac5e38f665b9';
-//const api_key = '&apikey=927ffd481c7548ef92cfe3189c8e4a07';
+//const api_key = '&apikey=a5b9e8fa25dd4524925eac5e38f665b9';
+const api_key = '&apikey=927ffd481c7548ef92cfe3189c8e4a07';
 
 
 let baseUrl = 'https://api.twelvedata.com/'
@@ -43,7 +43,7 @@ export default class App extends Component {
     console.log("App", this.state);
     return (
       <div className="App">
-        <div className="App-header">
+        <div>
           <Navbar bg="dark" variant="dark">
             <Link to='/'>
             <Navbar.Brand>Stock Market Watch List Portal</Navbar.Brand>
@@ -67,14 +67,13 @@ export default class App extends Component {
           </Switch>
         </main>
         <div class="fixed-bottom">
-          <div>
-            <p class="left-footer">Three Dudes & A Front-End Stack</p>
-          </div>
-          <div>
-            <p class="right-footer">Copyright &copy; 2021</p>
-          </div>
+            <div>
+             Three Dudes & A Front-End Stack
+            </div>
+            <div>
+             Copyright &copy; 2021
+            </div>
         </div>
-
       </div>
     )
   }
