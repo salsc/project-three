@@ -1,6 +1,3 @@
-# project three
-
-
 # MVP_REACT - Project_Unit3
 ## Project #3: Building a Front-End  Application
 
@@ -8,7 +5,7 @@
 This app is a Stock Market Watchlist. Add or remove stocks to watch.
 Goal objectives include the following:
 
-- Pull data into the application using an API  
+- Pull data into the application using the [TwelveData](https://twelvedata.com/docs) API  
 
 
 This application is based on the technology platform of utilizing an "MVC" (Model, View, Controller) as a front-end application utilizing React tools with JavaScript and HTML frameworks. 
@@ -22,7 +19,7 @@ This application is based on the technology platform of utilizing an "MVC" (Mode
 - A GitHub repo with the React app.
 - Must use React and leverage the API in the above requirements.
 - Must use React Router to handle multiple views.
--Mmust communicate with the API and render the UI accordingly with the information received (using `axios`).
+- Must communicate with the API and render the UI accordingly with the information received (using `axios`).
 
 ## Technologies Utilized:
 
@@ -46,7 +43,7 @@ This application is based on the technology platform of utilizing an "MVC" (Mode
 3. A user should be able to 
 4. 
 
-## Stretch
+## Next Steps
 5. Chart
 6. View stock by category
 7. 
