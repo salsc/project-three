@@ -1,5 +1,4 @@
 .container {
-    /* background-color:lightgray; */
     text-decoration: none;
     color: black;
     padding: 20px;
@@ -14,20 +13,6 @@
 
 
 
-.App-footer {
-    margin-top: -10px;
-    width: 100%;
-    background-color: #282c34;
-    min-height: 5vh;
-    align-items: center;
-    justify-content: center;
-    /* font-size: calc(10px + 2vmin); */
-    color: white;
-  }
 
-  /* #FooterImage {
-    width: 100px;
-    height: 100px;
-  } */
 
   

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Home.css';
-import {Switch, Route, Link, Redirect} from 'react-router-dom';
-import { waitForElementToBeRemoved } from '@testing-library/react';
+import '../App/App.css';
+import { Link } from 'react-router-dom';
 
 export default class Home extends Component {
     render() {

@@ -22,15 +22,23 @@ a {
 
 .fixed-bottom {
   background-color: rgb(38, 41, 38);
-  display: flex;
+  position: fixed;
+  bottom: 0;
+  display: inline-flex;
   flex-direction: row;
   justify-content: space-between;
   font-size: large;
   color: white;
   padding: 35px;
+  width: 96.5%;
 }
 
+/* .right-footer {
+  align-content: right;
+} */
+
 main {
- height: 750px;
+ height: 900px;
+
  background-color:rgba(211, 211, 211, .25);
 }
