@@ -7,6 +7,7 @@ import Show from "../Show/Show";
 
 const api_key = '&apikey=a5b9e8fa25dd4524925eac5e38f665b9';
 
+
 let baseUrl = 'https://api.twelvedata.com/'
 let timeSeries = 'time_series?' 
 let stocks = 'symbol=ATNX,DE,MORF,TSLA,CD,GME,OSS,BRK.A'
@@ -39,24 +40,28 @@ export default class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-        <Link to='/'>
-          <p id="title">Stock Market Watch List Portal</p>
-        </Link>
+          <Link to='/'>
+            <p id="title">Stock Market Watch List Portal</p>
+          </Link>
         </div>
         <main>
-        <Switch>
-          <Route exact path='/'>
-            <Home {...this.state} />
-          </Route>
-          <Route path='/symbol/:id' render={(routerProps) =>
-            <Show {...this.state} {...routerProps} />
-          }>
-          </Route>
-        </Switch>
+          <Switch>
+            <Route exact path='/'>
+              <Home {...this.state} />
+            </Route>
+            <Route path='/symbol/:id' render={(routerProps) =>
+              <Show {...this.state} {...routerProps} />
+            }>
+            </Route>
+          </Switch>
         </main>
         <div class="fixed-bottom">
-          <div>Three Dudes & A Front-End Stack</div> 
-          <div>Copyright (c) 2021</div>
+          <div>
+            <p class="left-footer">Three Dudes & A Front-End Stack</p>
+          </div>
+          <div>
+            <p class="right-footer">Copyright &copy; 2021</p>
+          </div>
         </div>
 
       </div>

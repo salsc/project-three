@@ -10,16 +10,6 @@
   font-weight: 700;
 }
 
-.App-footer {
-  margin-top: -10px;
-  width: 100%;
-  background-color: #282c34;
-  min-height: 5vh;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
 .entry {
   border: 2px solid grey;
   border-radius: 10px;
