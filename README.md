@@ -45,12 +45,14 @@ This application is based on the technology platform of utilizing an "MVC" (Mode
 2. A user should be able view a homepage diplaying a list of stock snapshots.
 3. A user should be able to 
 4. 
-5. 
-6. 
+
+## Stretch
+5. Chart
+6. View stock by category
 7. 
 8. 
 9. 
 10. 
 
 
-#### Copyright (c) 2021 Three Dudes & A Front-End Stack
+#### Copyright &copy; 2021 Three Dudes & A Front-End Stack
