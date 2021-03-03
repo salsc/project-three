@@ -1,18 +1,26 @@
 .container {
-    text-decoration: none;
-    color: black;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    font-size: x-large;
-    font-weight: 700;
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: x-large;
+  font-weight: 700;
 }
 
+.entry {
+  border: 2px solid grey;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 550px;
+}
 
-
-
-
-
-  
+.entryTitle {
+  display: flex;
+  justify-content: space-between;
+  width: 230px;
+  padding-left: 10px;
+}
